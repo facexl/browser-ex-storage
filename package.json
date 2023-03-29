@@ -14,6 +14,20 @@
       "require": "./dist/browser-ex-storage.umd.cjs"
     }
   },
+  "homepage": "https://github.com/facexl/browser-ex-storage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facexl/browser-ex-storage"
+  },
+  "author": "facexl@foxmail.com",
+  "license": "MIT",
+  "keywords": [
+    "browser-ex-storage",
+    "storage",
+    "promise",
+    "chrome-extension",
+    "localStorage"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",

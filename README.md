@@ -4,6 +4,12 @@
 
 ## useage
 
+```shell
+
+npm i browser-ex-storage
+
+```
+
 ```javascript
 
 import browserExStorage from 'browser-ex-storage'

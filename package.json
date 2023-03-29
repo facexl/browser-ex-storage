@@ -7,6 +7,7 @@
   ],
   "main": "./dist/browser-ex-storage.umd.cjs",
   "module": "./dist/browser-ex-storage.js",
+  "types": "./dist/types/browser-ex-storage.d.ts",
   "exports": {
     ".": {
       "import": "./dist/browser-ex-storage.js",

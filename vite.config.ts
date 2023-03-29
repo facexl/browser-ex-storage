@@ -14,7 +14,7 @@ export default defineConfig({
     ],
     build: {
         lib:{
-          entry: path.resolve(__dirname, 'src/main.ts'),
+          entry: path.resolve(__dirname, 'src/browser-ex-storage.ts'),
           name: 'browser-ex-storage',
           // the proper extensions will be added
           fileName: 'browser-ex-storage',

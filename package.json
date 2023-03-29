@@ -1,7 +1,6 @@
 {
   "name": "browser-ex-storage",
-  "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist"
@@ -10,8 +9,8 @@
   "module": "./dist/browser-ex-storage.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/browser-ex-storage.js",
+      "require": "./dist/browser-ex-storage.umd.cjs"
     }
   },
   "scripts": {

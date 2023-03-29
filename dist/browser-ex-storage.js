@@ -1,15 +1,15 @@
-const a = (o) => {
+const a = (t) => {
   try {
-    return JSON.parse(o);
+    return JSON.parse(t);
   } catch {
   }
-  return o;
-}, c = (o) => ({
+  return t;
+}, c = (t) => ({
   "chrome-ex": {
     get(e) {
       return new Promise((r) => {
-        chrome.storage.sync.get(e, (t) => {
-          r(t);
+        chrome.storage.sync.get(e, (o) => {
+          r(o);
         });
       });
     },
@@ -38,14 +38,14 @@ const a = (o) => {
   browser: {
     get(e) {
       return new Promise((r) => {
-        const t = Array.isArray(e) ? e : [e];
-        r(t.reduce((n, s) => (n[s] = a(localStorage.getItem(s)), n), {}));
+        const o = Array.isArray(e) ? e : [e];
+        r(o.reduce((n, s) => (n[s] = a(localStorage.getItem(s)), n), {}));
       });
     },
     set(e) {
       return new Promise((r) => {
-        Object.keys(e).forEach((t) => {
-          localStorage.setItem(t, typeof e[t] == "string" ? e[t] : JSON.stringify(e[t]));
+        Object.keys(e).forEach((o) => {
+          localStorage.setItem(o, typeof e[o] == "string" ? e[o] : JSON.stringify(e[o]));
         }), r(void 0);
       });
     },
@@ -60,7 +60,7 @@ const a = (o) => {
       });
     }
   }
-})[o];
+})[t];
 export {
   c as default
 };

@@ -25,7 +25,7 @@ const getJsonData = (d)=>{
     return d
 }
 
-const genStorage = (type:EnvType):S=>{
+const browserExStorage = (type:EnvType):S=>{
     return {
         'chrome-ex':{
             get(keys) {
@@ -100,4 +100,4 @@ const genStorage = (type:EnvType):S=>{
     }[type] as S
 }
 
-export default genStorage
+export default browserExStorage

@@ -12,5 +12,5 @@ interface S {
     clear: () => Promise<undefined>;
 }
 type EnvType = 'chrome-ex' | 'browser';
-declare const genStorage: (type: EnvType) => S;
-export default genStorage;
+declare const browserExStorage: (type: EnvType) => S;
+export default browserExStorage;

@@ -14,7 +14,8 @@ npm i browser-ex-storage
 
 import browserExStorage from 'browser-ex-storage'
 
-export const storage  = env ==='browser'?browserExStorage('browser'):browserExStorage('chrome-ex')
+// 注意此处的环境判断不能直接用，得根据你项目情况来
+export const storage  = env ==='browser' ? browserExStorage('browser'):browserExStorage('chrome-ex')
 
 await storage.get('key')
 
